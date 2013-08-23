@@ -1,0 +1,43 @@
+#!/usr/bin/jjs -Dnashorn.debug=true -scripting
+#
+//load Person
+load("./mykanban/dao/mongoDAO.js");
+
+function Controller() {	 
+
+    this.readData = function() {
+        return "{ \"postits\" : [" + mongoDAO.readAll() + "]}";
+    }    
+
+    this.deleteData = function(params) {
+    	
+	print("to be deleted: " + params);
+
+	try {
+	    mongoDAO.delete(params);
+	}catch(e){
+	    print('Error while deleting the object from Mongo: ' + e);
+	}
+
+	return generateResponse(mongoDAO.readAll());
+    }
+
+    this.processData = function(params) {
+    	
+	print(params);
+
+	try {
+	    mongoDAO.create(params);
+	}catch(e){
+	    print('Error while saving the object into Mongo: ' + e);
+	}
+
+	return generateResponse(mongoDAO.readAll());
+    }
+
+    function generateResponse(data) {
+        var HTML = " ";
+
+        return HTML;
+    }
+}

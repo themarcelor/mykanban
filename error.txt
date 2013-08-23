@@ -1,0 +1,122 @@
+Exception in thread "main" java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    jdk/nashorn/internal/scripts/Script$httpsrv.httpRequestHandler(Ljdk/nashorn/internal/runtime/ScriptFunction;Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object; @1095: invokevirtual
+  Reason:
+    Type 'java/lang/Object' (current frame, stack[0]) is not assignable to 'jdk/nashorn/internal/runtime/ScriptObject'
+  Current Frame:
+    bci: @1095
+    flags: { }
+    locals: { 'jdk/nashorn/internal/runtime/ScriptFunction', 'java/lang/Object', '[Ljava/lang/Object;', 'java/lang/Object', 'jdk/nashorn/internal/runtime/ScriptObject', top, 'java/lang/Object', 'java/lang/Object', 'java/lang/Object', 'java/lang/Object', 'java/lang/Object', 'jdk/nashorn/internal/objects/NativeArray', 'java/lang/Object', 'java/lang/Object', top, top, top, top, 'java/lang/Object', 'java/lang/Object', 'java/lang/Object', top, top, top, 'java/lang/Object' }
+    stack: { 'java/lang/Object', integer }
+  Bytecode:
+    0000000: 2ab6 0018 3a04 2c2a 04b8 002f 4eb2 0033
+    0000010: 593a 0759 3a0d 3a18 2d03 b600 3959 ba00
+    0000020: 4400 005f ba00 4800 003a 0619 04ba 004c
+    0000030: 0000 1906 ba00 4f00 003a 072d 03b6 0039
+    0000040: 59ba 0052 0000 5fba 0048 0000 3a08 1904
+    0000050: ba00 5500 0019 0812 57ba 005a 0000 3a09
+    0000060: 1904 ba00 5d00 0019 09ba 004f 0000 3a0a
+    0000070: 04b8 0061 b800 653a 0b19 0a59 ba00 6800
+    0000080: 005f ba00 4800 003a 0c19 0b59 ba00 6b00
+    0000090: 005f 190c ba00 6e00 0057 190c 59ba 0071
+    00000a0: 0000 5f12 73ba 0075 0000 03ba 007e 0000
+    00000b0: 9900 5519 0403 190c b800 8257 a700 4319
+    00000c0: 0a59 ba00 6800 005f ba00 4800 003a 0d19
+    00000d0: 0b59 ba00 6b00 005f 190d ba00 6e00 0057
+    00000e0: 1904 0319 0db8 0082 5719 0dba 0085 0000
+    00000f0: 03ba 007e 0000 9900 09a7 0009 0000 bfa7
+    0000100: ffc0 a701 4019 0c59 ba00 7100 005f 1287
+    0000110: ba00 7500 0003 ba00 7e00 0099 0127 03b8
+    0000120: 008d 3a0e 1904 0312 8f19 0cb8 0092 b800
+    0000130: 8257 a700 7f19 0a59 ba00 6800 005f ba00
+    0000140: 4800 003a 0d19 0b59 ba00 6b00 005f 190d
+    0000150: ba00 6e00 0057 1904 0312 9419 0db8 0092
+    0000160: b800 8257 1296 3a0f 190d 59ba 0071 0000
+    0000170: 5f19 0fba 006e 0000 03ba 007e 0000 9900
+    0000180: 1d19 0d59 ba00 9900 005f 190f ba00 8500
+    0000190: 00ba 006e 0000 3a0e a700 0319 0dba 0085
+    00001a0: 0000 03ba 007e 0000 9900 09a7 0009 0000
+    00001b0: bfa7 ff84 1904 0312 9619 0eb8 0092 b800
+    00001c0: 8257 1904 ba00 9c00 0019 04ba 009f 0000
+    00001d0: 0119 0eba 00a1 0000 05ba 00a5 0000 ba00
+    00001e0: 4f00 003a 1019 0403 12a7 1910 ba00 8500
+    00001f0: 00b8 0092 b800 8257 190a 59ba 00aa 0000
+    0000200: 5f19 10ba 006e 0000 5719 04ba 00ad 0000
+    0000210: 59ba 00b0 0000 5f19 10ba 006e 0000 3a11
+    0000220: 1904 0312 b219 11b8 0092 b800 8257 190b
+    0000230: 59ba 006b 0000 5f19 11ba 006e 0000 57a7
+    0000240: 0003 1904 0312 b419 0b03 ba00 b700 00b8
+    0000250: 0092 b800 8257 190b 03ba 00b7 0000 59ba
+    0000260: 00ba 0000 5fb2 00be 59c7 000f 5712 c012
+    0000270: c2b8 00c6 59b3 00be b800 c9ba 006e 0000
+    0000280: 3a12 1904 0312 cb19 12b8 0092 b800 8257
+    0000290: 1912 04ba 00b7 0000 59ba 00ba 0000 5fb2
+    00002a0: 00ce 59c7 000f 5712 d012 c2b8 00c6 59b3
+    00002b0: 00ce b800 c9ba 006e 0000 3a13 1904 ba00
+    00002c0: d300 0001 12d5 1913 03ba 00b7 0000 b800
+    00002d0: 92ba 00a1 0000 3a14 1904 ba00 d300 0001
+    00002e0: 1913 04ba 00b7 0000 ba00 a100 004e 1904
+    00002f0: 032d b800 8257 1904 0312 d719 14b8 0092
+    0000300: b800 8257 1914 59ba 00da 0000 5f12 dcba
+    0000310: 0075 0000 b800 e299 00b6 190b 190b ba00
+    0000320: e500 000f 67ba 00e8 0000 59ba 00ba 0000
+    0000330: 5f12 eaba 0075 0000 3a15 1904 ba00 ed00
+    0000340: 0001 1914 ba00 a100 003a 1619 0412 efb8
+    0000350: 00f2 12f4 ba00 f800 0099 003e 1904 ba00
+    0000360: fb00 00ba 00fd 0000 3a17 1917 59ba 0100
+    0000370: 0000 5f19 15ba 006e 0000 3a18 1904 ba01
+    0000380: 0300 0001 1907 1301 0513 0107 1918 ba01
+    0000390: 0a00 0057 a700 3619 16b8 00e2 9a00 16bb
+    00003a0: 010c 5913 010e 1301 0f11 00a0 100d b701
+    00003b0: 12bf 1904 ba01 0300 0001 1907 1301 0513
+    00003c0: 0107 1918 ba01 0a00 0057 a700 2119 0403
+    00003d0: 1301 14b8 0117 5719 04ba 011a 0000 0119
+    00003e0: 0719 0619 14ba 011d 0000 57a7 003c 3a19
+    00003f0: 1919 59c1 010c 9900 09c0 010c b401 203a
+    0000400: 1a19 0403 191a b800 8257 1904 ba01 0300
+    0000410: 0001 1907 1301 2213 0107 1904 ba01 2500
+    0000420: 00ba 010a 0000 5719 0759 ba01 2d00 005f
+    0000430: ba00 4800 0057 190a 59ba 0130 0000 5fba
+    0000440: 0048 0000 572d 03b6 0039 59ba 0130 0000
+    0000450: 5fba 0048 0000 57b2 0033 b0            
+  Exception Handler Table:
+    bci [758, 1006] => handler: 1006
+  Stackmap Table:
+    full_frame(@191,{Object[#20],Object[#333],Object[#334],Object[#53],Object[#53],Top,Object[#333],Object[#333],Object[#333],Object[#333],Object[#333],Object[#336],Object[#333],Object[#333],Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Object[#338]},{})
+    full_frame(@252,{},{Object[#296]})
+    full_frame(@255,{Object[#20],Object[#333],Object[#334],Object[#53],Object[#53],Top,Object[#333],Object[#333],Object[#333],Object[#333],Object[#333],Object[#336],Object[#333],Object[#333],Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Object[#338]},{})
+    same_frame(@258)
+    full_frame(@261,{Object[#20],Object[#333],Object[#334],Object[#53],Object[#53],Top,Object[#333],Object[#333],Object[#333],Object[#333],Object[#333],Object[#336],Object[#333],Object[#338],Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Object[#338]},{})
+    full_frame(@309,{Object[#20],Object[#333],Object[#334],Object[#53],Object[#53],Top,Object[#333],Object[#333],Object[#333],Object[#333],Object[#333],Object[#336],Object[#333],Object[#333],Object[#333],Top,Top,Top,Top,Top,Top,Top,Top,Top,Object[#338]},{})
+    full_frame(@411,{Object[#20],Object[#333],Object[#334],Object[#53],Object[#53],Top,Object[#333],Object[#333],Object[#333],Object[#333],Object[#333],Object[#336],Object[#333],Object[#333],Object[#333],Object[#340],Top,Top,Top,Top,Top,Top,Top,Top,Object[#338]},{})
+    full_frame(@430,{},{Object[#296]})
+    full_frame(@433,{Object[#20],Object[#333],Object[#334],Object[#53],Object[#53],Top,Object[#333],Object[#333],Object[#333],Object[#333],Object[#333],Object[#336],Object[#333],Object[#333],Object[#333],Top,Top,Top,Top,Top,Top,Top,Top,Top,Object[#338]},{})
+    full_frame(@436,{Object[#20],Object[#333],Object[#334],Object[#53],Object[#53],Top,Object[#333],Object[#333],Object[#333],Object[#333],Object[#333],Object[#336],Object[#333],Object[#333],Object[#333],Object[#340],Top,Top,Top,Top,Top,Top,Top,Top,Object[#338]},{})
+    full_frame(@578,{Object[#20],Object[#333],Object[#334],Object[#53],Object[#53],Top,Object[#333],Object[#333],Object[#333],Object[#333],Object[#333],Object[#336],Object[#333],Object[#333],Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Object[#338]},{})
+    full_frame(@632,{Object[#20],Object[#333],Object[#334],Object[#53],Object[#53],Top,Object[#333],Object[#333],Object[#333],Object[#333],Object[#333],Object[#336],Object[#333],Object[#333],Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Object[#338]},{Object[#333],Object[#333],Object[#333]})
+    full_frame(@690,{Object[#20],Object[#333],Object[#334],Object[#53],Object[#53],Top,Object[#333],Object[#333],Object[#333],Object[#333],Object[#333],Object[#336],Object[#333],Object[#333],Top,Top,Top,Top,Object[#333],Top,Top,Top,Top,Top,Object[#338]},{Object[#333],Object[#333],Object[#333]})
+    full_frame(@919,{Object[#20],Object[#333],Object[#334],Object[#333],Object[#53],Top,Object[#333],Object[#333],Object[#333],Object[#333],Object[#333],Object[#336],Object[#333],Object[#333],Top,Top,Top,Top,Object[#333],Object[#333],Object[#333],Object[#333],Object[#333],Top,Object[#338]},{})
+    same_frame(@946)
+    full_frame(@970,{Object[#20],Object[#333],Object[#334],Object[#333],Object[#53],Top,Object[#333],Object[#333],Object[#333],Object[#333],Object[#333],Object[#336],Object[#333],Object[#333],Top,Top,Top,Top,Object[#333],Object[#333],Object[#333],Object[#333],Object[#333],Top,Object[#333]},{})
+    full_frame(@973,{Object[#20],Object[#333],Object[#334],Object[#333],Object[#53],Top,Object[#333],Object[#333],Object[#333],Object[#333],Object[#333],Object[#336],Object[#333],Object[#333],Top,Top,Top,Top,Object[#333],Object[#333],Object[#333],Top,Top,Top,Object[#338]},{})
+    full_frame(@1003,{Object[#20],Object[#333],Object[#334],Object[#333],Object[#53],Top,Object[#333],Object[#333],Object[#333],Object[#333],Object[#333],Object[#336],Object[#333],Object[#333],Top,Top,Top,Top,Object[#333],Object[#333],Object[#333],Top,Top,Top,Object[#333]},{})
+    same_locals_1_stack_item_frame(@1006,Object[#296])
+    full_frame(@1023,{Object[#20],Object[#333],Object[#334],Object[#333],Object[#53],Top,Object[#333],Object[#333],Object[#333],Object[#333],Object[#333],Object[#336],Object[#333],Object[#333],Top,Top,Top,Top,Object[#333],Object[#333],Object[#333],Top,Top,Top,Object[#333],Object[#296]},{Object[#333]})
+    chop_frame(@1063,1)
+
+    at java.lang.Class.getDeclaredFields0(Native Method)
+    at java.lang.Class.privateGetDeclaredFields(Class.java:2476)
+    at java.lang.Class.getDeclaredField(Class.java:1975)
+    at jdk.nashorn.internal.codegen.Compiler$2.run(Compiler.java:417)
+    at jdk.nashorn.internal.codegen.Compiler$2.run(Compiler.java:413)
+    at java.security.AccessController.doPrivileged(Native Method)
+    at jdk.nashorn.internal.codegen.Compiler.install(Compiler.java:413)
+    at jdk.nashorn.internal.codegen.Compiler.install(Compiler.java:447)
+    at jdk.nashorn.internal.runtime.Context.compile(Context.java:843)
+    at jdk.nashorn.internal.runtime.Context.compileScript(Context.java:799)
+    at jdk.nashorn.internal.runtime.Context.compileScript(Context.java:344)
+    at jdk.nashorn.tools.Shell.runScripts(Shell.java:309)
+    at jdk.nashorn.tools.Shell.run(Shell.java:179)
+    at jdk.nashorn.tools.Shell.main(Shell.java:143)
+    at jdk.nashorn.tools.Shell.main(Shell.java:122)
